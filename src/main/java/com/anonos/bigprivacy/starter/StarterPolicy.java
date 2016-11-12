@@ -2,6 +2,7 @@ package com.anonos.bigprivacy.starter;
 
 import com.anonos.bigprivacy.privacypolicyapi.DataType;
 import com.anonos.bigprivacy.privacypolicyapi.Field;
+import com.anonos.bigprivacy.privacypolicyapi.LoadablePrivacyPolicy;
 import com.anonos.bigprivacy.privacypolicyapi.RuleExecutionException;
 import com.anonos.bigprivacy.privacypolicyapi.PrivacyPolicy;
 import com.anonos.bigprivacy.privacypolicyapi.PrivacyPolicyRule;
@@ -13,6 +14,7 @@ import java.util.Set;
 /**
  * A sample policy that doesn't do much.
  */
+@LoadablePrivacyPolicy
 public class StarterPolicy implements PrivacyPolicy {
 
     public String getId() {
